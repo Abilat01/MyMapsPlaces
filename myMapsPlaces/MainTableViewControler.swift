@@ -12,7 +12,7 @@ class MainTableViewControler: UITableViewController {
     
     
     let restaurantNames = ["Бар пробка", "СушиWay", "Карл Швабе", "Додо пицца", "Евразия",
-                           "Beerloga", "TOKIO-SITI", "SPB", "KFC", "Макдональдс", "Васаби"]
+                           "Beerloga", "TOKIO-SITI", "Много мяса", "Жемчужина", "Теремок", "Васаби", "Камелот", "Пивная кружка", "SPB"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +32,19 @@ class MainTableViewControler: UITableViewController {
         
         cell.textLabel?.text = restaurantNames[indexPath.row]
         cell.imageView?.image = UIImage(named: restaurantNames[indexPath.row])
-
-
+        cell.imageView?.layer.cornerRadius = cell.frame.size.height / 2
+        cell.imageView?.clipsToBounds = true
+        
+        
         return cell
     }
     
+    // MARK: - Tabel View delegate
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 85
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

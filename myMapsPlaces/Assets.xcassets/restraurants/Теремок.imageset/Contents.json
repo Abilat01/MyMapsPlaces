@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "KFC.jpeg",
+      "filename" : "Теремок.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Теремок@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Теремок@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Макдональдс.jpeg",
+      "filename" : "Пивная кружка.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Пивная кружка@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Пивная кружка@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

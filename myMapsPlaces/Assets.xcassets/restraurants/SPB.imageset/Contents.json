@@ -6,10 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "SPB@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "SPB@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

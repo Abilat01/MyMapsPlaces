@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Васаби.jpg",
+      "filename" : "Много мяса.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Васаби@2x.jpg",
+      "filename" : "Много мяса@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Васаби@3x.jpg",
+      "filename" : "Много мяса@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

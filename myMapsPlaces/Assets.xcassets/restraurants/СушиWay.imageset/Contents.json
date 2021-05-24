@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "СушиWay.jpeg",
+      "filename" : "СушиWay.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "СушиWay@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "СушиWay@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
