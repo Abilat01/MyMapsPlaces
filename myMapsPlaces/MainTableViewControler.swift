@@ -28,12 +28,14 @@ class MainTableViewControler: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
         
-        cell.textLabel?.text = restaurantNames[indexPath.row]
-        cell.imageView?.image = UIImage(named: restaurantNames[indexPath.row])
-        cell.imageView?.layer.cornerRadius = cell.frame.size.height / 2
-        cell.imageView?.clipsToBounds = true
+        
+        cell.nameLabel.text = restaurantNames[indexPath.row]
+        cell.imegeOfPlace.image = UIImage(named: restaurantNames[indexPath.row])
+        cell.imegeOfPlace.layer.cornerRadius = cell.imegeOfPlace.frame.size.height / 2
+        cell.imegeOfPlace.clipsToBounds = true
+        
         
         
         return cell
@@ -42,7 +44,6 @@ class MainTableViewControler: UITableViewController {
     // MARK: - Tabel View delegate
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         return 85
     }
     
