@@ -14,6 +14,7 @@ class MainTableViewControler: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     }
 
@@ -34,7 +35,7 @@ class MainTableViewControler: UITableViewController {
         cell.locationLabel.text = places[indexPath.row].location
         cell.typeLabel.text = places[indexPath.row].type
         
-        cell.imegeOfPlace.image = UIImage(named: places[indexPath.row].imege)
+        cell.imegeOfPlace.image = UIImage(named: places[indexPath.row].restrantImage!)
         cell.imegeOfPlace.layer.cornerRadius = cell.imegeOfPlace.frame.size.height / 2
         cell.imegeOfPlace.clipsToBounds = true
         
@@ -49,7 +50,7 @@ class MainTableViewControler: UITableViewController {
         
     }
     
-    @IBAction func cancelAction(_ segue: UIStoryboardSegue) {
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
         
     }
     

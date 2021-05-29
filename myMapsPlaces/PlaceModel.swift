@@ -5,14 +5,15 @@
 //  Created by Danya on 25.05.2021.
 //
 
-import Foundation
+import UIKit
 
 struct Place {
     
     var name: String
-    var location: String
-    var type: String
-    var imege: String
+    var location: String?
+    var type: String?
+    var image: UIImage?
+    var restrantImage: String?
     
     
     static let restaurantNames = ["Бар пробка", "СушиWay", "Карл Швабе", "Додо пицца", "Евразия",
@@ -24,7 +25,7 @@ struct Place {
         var places = [Place]()
         
         for place in restaurantNames {
-            places.append(Place(name: place, location: "Колпино", type: "Ресторан", imege: place))
+            places.append(Place(name: place, location: "Колпино", type: "Ресторан", image: nil, restrantImage: place))
         }
         
     return places
